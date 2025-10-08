@@ -12,21 +12,3 @@ int main()
         cout << "No numbers to sum. Total sum is 0." << endl;
         return 0;
     }
-
-    do {
-        cout << "Enter integer no. " << i << ": ";
-        
-        // Проверка корректного ввода
-        while (!(cin >> number)) {
-            cout << "Warning: Invalid input. Please enter an integer: ";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        }
-        
-        sum_k += number;
-        i++;
-    } while (i <= k);
-
-    cout << "The total sum of " << k << " integers is: " << sum_k;
-    return 0;
-}
