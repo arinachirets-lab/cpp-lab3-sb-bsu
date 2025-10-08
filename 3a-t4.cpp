@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
     int k, i = 1, sum_k = 0, number;
